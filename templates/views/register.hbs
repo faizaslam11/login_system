@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }</script> -->
+
+    <link href="css/register.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+    <title>SS-TEST</title>
+    <link rel="shortcut icon" href="images/favicon_test.png">
+    <!-- //web font -->
+</head>
+
+<body>
+    <header class="item header margin-top-0">
+        <div class="wrapper">
+            {{>navbar}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-pageheader">
+                            <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.0s">
+                                SignUp Form
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <!--<h1 style="color: aliceblue;">SignUp Form</h1>-->
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form action="/register" method="POST">
+                    <input class="text" type="text" name="name" placeholder="Username" required="">
+                    <input class="text email" type="email" name="email" placeholder="Email" required="">
+                    <input class="text" type="password" name="password" placeholder="Password" required="">
+                    <input class="text w3lpass" type="password" name="confirmpassword" placeholder="Confirm Password"
+                        required="">
+                    <div class="wthree-text">
+                        <label class="anim">
+                            <input type="checkbox" class="checkbox" required="">
+                            <span>I Agree To The Terms & Conditions</span>
+                        </label>
+                        <div class="clear"> </div>
+                    </div>
+                    <input type="submit" value="SIGNUP">
+                </form>
+                <p>Already have an Account? <a href="login"> Login Now!</a></p>
+            </div>
+        </div>
+        <!-- copyright -->
+        
+        <!-- //copyright -->
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- //main -->
+
+    {{!-- {{>footer}} --}}
+    
+</body>
+
+</html>

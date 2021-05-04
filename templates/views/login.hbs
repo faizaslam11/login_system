@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <title>SS-TEST</title>
+    <link rel="shortcut icon" href="images/favicon_test.png">
+
+</head>
+
+<body>
+
+    <!-- HEADER =============================-->
+    <header class="item header margin-top-0">
+        <div class="wrapper">
+            {{>navbar}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-pageheader">
+                            <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.0s">
+                                Login Form
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT =============================-->
+
+    
+        <!-- main -->
+        <div class="main-w3layouts wrapper">
+
+            <div class="main-agileinfo">
+                <div class="agileits-top">
+                    <form action="/login" method="POST">
+                        <input class="text email" type="email" name="email" placeholder="Email" required="">
+                        <input class="text" type="password" name="password" placeholder="Password" required="">
+                        <div class="wthree-text">
+                            <label class="anim">
+                                <input type="checkbox" class="checkbox" required="">
+                                <span>I Agree To The Terms & Conditions</span>
+                            </label>
+                            <div class="clear"> </div>
+                        </div>
+                        <input type="submit" value="LOGIN">
+                    </form>
+                    <p>Don't have an Account? <a href="/registration"> Register now</a></p>
+                </div>
+            </div>
+
+            <ul class="colorlib-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- //main -->
+
+    <!-- FOOTER =============================-->
+    {{!-- {{>footer}} --}}
+
+    <!-- SCRIPTS =============================-->
+    <script src="js/jquery-.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/anim.js"></script>
+
+</body>
+
+</html>
