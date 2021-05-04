@@ -50,10 +50,10 @@ app.post("/register", async(req, res) => {
             const registered= await registerEmployee.save();
             res.status(201).render("index");
         }else {
-            res.send("password are  not matching")
+            res.send("password are not matching")
         }
         console.log(req.body.name); 
-            res.send(req.body.name)
+            res.send(req.body.name);
     }catch (error){
         res.status(400).send(error);
     }
@@ -76,7 +76,7 @@ app.post("/login", async(req, res) => {
             }
 
     }catch (error) {
-        res.status(400).send("invalid login details")
+        res.status(400).send("invalid login details");
     }
 })
 app.listen(port, () => {
